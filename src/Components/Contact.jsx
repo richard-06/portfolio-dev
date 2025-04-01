@@ -6,7 +6,7 @@ export function Contact() {
   const [mail, setMail] = useState("");
   const [msg, setMsg] = useState("");
   return (
-    <div className="flex h-[100vh] items-center justify-center">
+    <div className="flex h-[85vh] items-center justify-center sm:h-[100vh]">
       <div className="rounded-lg border-[0.5px] border-stone-500 py-5 pb-0">
         <form className="px-5">
           <div className="text-2xl">Send me a mail.</div>
