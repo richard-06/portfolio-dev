@@ -7,7 +7,7 @@
 }
 
 :root {
-  background-color: hwb(52 74% 2%);
+  /* background-color: hwb(52 74% 2%); */
   background-image: radial-gradient(#b1afaf 1px, transparent 1px);
   background-size: 16px 16px;
 }
