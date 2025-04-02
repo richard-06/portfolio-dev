@@ -8,7 +8,7 @@ import { Contact } from "./Components/Contact.jsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio-dev">
       <div className="app">
         <Nav />
         <Routes>

@@ -2,17 +2,20 @@ import { UserOutlined } from "@ant-design/icons";
 
 export function About() {
   return (
-    <div className="mt-10 flex h-[100vh] items-center justify-center">
-      <div className="mr-10 h-[75vh] w-[490px] rounded-3xl border-2 border-amber-900 bg-amber-50 px-10 pt-10">
-        <div className="mb-10 w-25 rounded bg-amber-900 text-center text-white">
+    <div className="flex h-[100vh] items-center justify-center">
+      <div className="mr-10 h-[75vh] w-[490px] px-10 pt-10">
+        <div className="mb-10 w-30 rounded bg-black text-center text-xl text-white">
           <UserOutlined /> About me
         </div>
+
         <div className="text-4xl">Full-Stack</div>
-        <div className="gradient-text mt-[-6px] text-4xl">Developer</div>
-        <div className="mt-1 text-3xl">
+        <div className="mt-[-6px] text-4xl font-bold text-purple-400">
+          Developer
+        </div>
+        <div className="text-3xl">
           Based In <span className="font-bold">UK.</span>
         </div>
-        <div className="mt-3 mb-6 h-2 w-[35%] bg-gradient-to-r from-amber-300 to-amber-500"></div>
+        <div className="mt-3 mb-6 h-2 w-[35%] bg-gradient-to-r from-purple-300 to-purple-500"></div>
         <div className="text-justify">
           I am a self-taught Full-Stack Developer currently living in United
           kingdom. Currently with an year of experience in different technoloies
@@ -20,24 +23,24 @@ export function About() {
           am very compfortable with adapting to new software and technoloies.
           With a strong passion for innovation and a keen eye for detail, I'm
           confident in my ability to collaborate with cross-functional teams,
-          drive projects forward and deliver high quality results
+          drive projects forward and deliver high quality results.
         </div>
       </div>
-      <div className="h-[75vh] w-[300px] rounded-3xl border-2 border-amber-900 bg-amber-50 px-10 pt-10">
+      <div className="h-[75vh] w-[300px] px-10 pt-10">
         <div className="text-2xl">Nationality</div>
-        <div className="h-[3px] w-[100%] bg-gradient-to-r from-amber-300 to-amber-500"></div>
+        <div className="h-[3px] w-[100%] bg-gradient-to-r from-purple-300 to-purple-500"></div>
         <div className="mt-2 mb-4">
           <Bullet item={"Indian"} />
         </div>
         <div className="text-2xl">Languages</div>
-        <div className="h-[3px] w-[100%] bg-gradient-to-r from-amber-300 to-amber-500"></div>
+        <div className="h-[3px] w-[100%] bg-gradient-to-r from-purple-300 to-purple-500"></div>
         <div className="mt-2 mb-4">
           <Bullet item={"English"} />
           <Bullet item={"Tamil"} />
           {/* <Bullet item={""} /> */}
         </div>
         <div className="text-2xl">Hobbies</div>
-        <div className="h-[3px] w-[100%] bg-gradient-to-r from-amber-300 to-amber-500"></div>
+        <div className="h-[3px] w-[100%] bg-gradient-to-r from-purple-300 to-purple-500"></div>
         <div className="mt-2">
           <Bullet item={"Building small full-stack side projects"} />
           <Bullet item={"Exploring new web frameworks and design tools"} />

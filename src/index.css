@@ -1,22 +1,27 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
 
-* {
-  /* font-family: "Boldonse"; */
-  overflow-y: hidden;
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
 }
 
 :root {
   /* background-color: hwb(52 74% 2%); */
-  background-image: radial-gradient(#b1afaf 1px, transparent 1px);
+  background-image: radial-gradient(#f7ddf8 1px, transparent 1px);
   background-size: 16px 16px;
+  overflow-y: hidden;
 }
 
 .gradient-text {
   background: linear-gradient(
     to right,
-    hsl(31, 100%, 49%),
-    #f0f00c
+    hsl(299, 100%, 54%),
+    #b303ff
   ); /* amber gradient */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
