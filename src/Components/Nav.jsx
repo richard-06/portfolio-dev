@@ -21,8 +21,8 @@ function NavIcon({ children, link }) {
 
 export function Nav() {
   return (
-    <div className="absolute bottom-0 left-[50%] w-[100%] translate-x-[-50%] sm:bottom-auto">
-      <nav className="group mx-auto my-10 flex w-[290px] transform justify-evenly rounded-[35px] border bg-white transition-all duration-400 hover:scale-115 hover:border-purple-600 sm:w-[320px]">
+    <div className="fixed bottom-0 left-[50%] z-50 w-[100%] translate-x-[-50%] sm:absolute sm:bottom-auto">
+      <nav className="group mx-auto my-10 flex w-[80%] transform justify-evenly rounded-[35px] border bg-white transition-all duration-400 hover:scale-115 hover:border-purple-600 sm:w-[320px]">
         <NavIcon link="/">
           <HomeOutlined />
         </NavIcon>

@@ -11,8 +11,7 @@ import {
   RightOutlined,
   ScanOutlined,
 } from "@ant-design/icons";
-import ghibli from "../assets/ghibli.jpg";
-import chess from "../assets/chess.png";
+
 import chess2 from "../assets/chess2.png";
 
 import projects from "../data";
@@ -23,15 +22,14 @@ import { useRef } from "react";
 export function Skills() {
   const carouselRef = useRef(null);
   return (
-    // <div className="mt-10 flex h-[100vh] items-center justify-center">
-    <div className="flex h-[100vh] items-center">
-      <div className="mt-10 flex h-[60%] flex-1/2 flex-col pl-40">
+    <div className="flex flex-col items-center justify-center overflow-auto sm:h-[100vh] sm:flex-row">
+      <div className="mt-10 flex h-[60%] flex-1/2 flex-col sm:pl-40">
         <div className="pb-3 text-3xl tracking-wide">
           My Technical <br /> Experience/Skills.
         </div>
         <div className="mb-5 h-[10px] w-[40%] bg-gradient-to-r from-amber-300 to-amber-500"></div>
 
-        <div className="grid-rows- mt-3 inline-grid grid-cols-7 gap-5">
+        <div className="grid-rows- mt-3 inline-grid grid-cols-7 gap-2 sm:gap-3">
           <SkillIcons item={"CPP"} />
           <SkillIcons item={"Anaconda-Dark"} />
           <SkillIcons item={"HTML"} />
@@ -54,8 +52,9 @@ export function Skills() {
           <SkillIcons item={"React-Light"} />
         </div>
       </div>
-      <div className="mt-10 h-[60%] flex-1/2">
-        <div className="mx-auto w-[300px] self-center text-center text-2xl tracking-widest uppercase">
+
+      <div className="mt-10 mb-30 h-[60%] flex-1/2">
+        <div className="mx-auto w-[300px] self-center bg-amber-100 text-center text-2xl tracking-widest uppercase">
           Projects
         </div>
 
@@ -64,11 +63,15 @@ export function Skills() {
             onClick={() => {
               carouselRef.current.prev();
             }}
-            className="w-20px mt-8 flex h-[60px] cursor-pointer items-center rounded-xl px-3 text-3xl transition-all duration-300 hover:bg-amber-100"
+            className="mt-8 flex h-[60px] w-[10vw] cursor-pointer justify-center rounded-xl text-5xl transition-all duration-300 hover:bg-amber-100 sm:w-20 sm:px-3 sm:text-3xl"
           >
             <LeftOutlined />
           </div>
-          <Carousel ref={carouselRef} className="w-[350px]" infinite={false}>
+          <Carousel
+            ref={carouselRef}
+            className="w-[80vw] sm:w-[350px]"
+            infinite={false}
+          >
             {projects.map((project) => (
               <CarouselItem project={project} />
             ))}
@@ -77,21 +80,20 @@ export function Skills() {
             onClick={() => {
               carouselRef.current.next();
             }}
-            className="w-20px mt-8 flex h-[60px] cursor-pointer items-center rounded-xl px-3 text-3xl transition-all duration-300 hover:bg-amber-100"
+            className="mt-8 flex h-[60px] w-[10vw] cursor-pointer justify-center rounded-xl text-5xl transition-all duration-300 hover:bg-amber-100 sm:w-20 sm:px-3 sm:text-3xl"
           >
             <RightOutlined />
           </div>
         </div>
       </div>
     </div>
-    // </div>
   );
 }
 
 function CarouselItem({ project = "ss" }) {
   return (
     <div>
-      <h3 className="relative my-4 flex h-[480px] w-[350px] items-center justify-center">
+      <h3 className="relative my-4 flex h-[480px] w-[80vw] items-center justify-center sm:w-[350px]">
         <div className="absolute bottom-0 z-20 mx-auto mb-8 flex w-[50%] cursor-pointer justify-center rounded-xl bg-black py-1 text-center text-white transition-all duration-300 group-hover:scale-115 hover:scale-105">
           <div>Open Project</div>
           <GithubOutlined className="self-centeralign-middle ml-2 text-xl" />

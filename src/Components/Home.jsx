@@ -10,6 +10,10 @@ import {
 export default function Home() {
   return (
     <div className="flex justify-between">
+      <div className="absolute top-0 left-0 mt-2 rounded-r-2xl border-2 border-l-0 border-red-500 bg-red-300 px-4 py-1 text-[1rem] font-bold text-white">
+        {" "}
+        Site Under Development
+      </div>
       <div className="mx-auto mt-[12%] mb-[12%] flex w-[45%] flex-col rounded-3xl p-10">
         <div className="mb-[-10px] cursor-default text-7xl font-bold tracking-wider text-purple-500">
           Roshan
