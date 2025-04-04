@@ -14,7 +14,8 @@ export default function Home() {
         {" "}
         Site Under Development
       </div>
-      <div className="mx-auto mt-[12%] mb-[12%] flex w-[45%] flex-col rounded-3xl p-10">
+
+      <div className="mx-auto mt-[50%] mb-[12%] flex flex-col rounded-3xl sm:mt-[12%] sm:w-[45%] sm:p-10">
         <div className="mb-[-10px] cursor-default text-7xl font-bold tracking-wider text-purple-500">
           Roshan
         </div>
@@ -45,8 +46,8 @@ export default function Home() {
           </Icons>
         </div>
 
-        <div className="group text-l relative z-10 flex w-[40%] cursor-pointer justify-center rounded-3xl border border-purple-500 bg-white font-bold text-purple-500">
-          <div className="absolute z-1 h-[100%] w-0 rounded-[50px] bg-purple-600 opacity-0 transition-all duration-300 ease-out group-hover:w-[100%] group-hover:opacity-100"></div>
+        <div className="group text-l relative z-10 flex w-[50%] cursor-pointer justify-center rounded-3xl border border-purple-500 bg-white font-bold text-purple-500 sm:w-[40%]">
+          <div className="absolute z-1 h-[100%]rounded-[50px] bg-purple-600 opacity-0 transition-all duration-300 ease-out group-hover:w-[100%] group-hover:opacity-100"></div>
           <div className="z-10 self-center pl-1 transition-all duration-300 group-hover:text-white">
             <FileOutlined />
           </div>
@@ -55,7 +56,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-[100vh] w-[43%]">
+
+      <div className="hidden h-[100vh] w-[43%] sm:block">
         <img
           className="h-[100%] w-[100%] justify-self-center border-white object-cover object-right transition-all hover:border"
           src={ghibli}
