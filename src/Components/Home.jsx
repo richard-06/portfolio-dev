@@ -46,12 +46,19 @@ export default function Home() {
           </Icons>
         </div>
 
-        <div className="group text-l relative z-10 flex w-[50%] cursor-pointer justify-center rounded-3xl border border-purple-500 bg-white font-bold text-purple-500 sm:w-[40%]">
+        <div
+          onClick={() => {
+            const link =
+              "https://www.dropbox.com/scl/fi/aqkh7l1g65vhhvxvn43l2/master-resume.pdf?rlkey=d3rixydncjvswo88kt9rmj7vx&st=3kl2gspv&dl=0";
+            window.open(link, "_blank", "noopener,noreferrer");
+          }}
+          className="group text-l relative z-10 flex w-[50%] cursor-pointer justify-center rounded-3xl border border-purple-500 bg-white font-bold text-purple-500 transition-all duration-300 hover:bg-purple-500 sm:w-[40%]"
+        >
           <div className="absolute z-1 h-[100%]rounded-[50px] bg-purple-600 opacity-0 transition-all duration-300 ease-out group-hover:w-[100%] group-hover:opacity-100"></div>
           <div className="z-10 self-center pl-1 transition-all duration-300 group-hover:text-white">
             <FileOutlined />
           </div>
-          <div className="z-10 p-2 pl-1.5 transition-all duration-300 group-hover:font-light group-hover:text-white">
+          <div className="z-10 p-2 pl-1.5 transition-all duration-300 group-hover:text-white">
             View Resume
           </div>
         </div>

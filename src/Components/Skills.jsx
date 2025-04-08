@@ -12,8 +12,6 @@ import {
   ScanOutlined,
 } from "@ant-design/icons";
 
-import chess2 from "../assets/chess2.png";
-
 import projects from "../data";
 
 import { Button, Carousel } from "antd";
@@ -94,14 +92,20 @@ function CarouselItem({ project = "ss" }) {
   return (
     <div>
       <h3 className="relative my-4 flex h-[480px] w-[80vw] items-center justify-center sm:w-[350px]">
-        <div className="absolute bottom-0 z-20 mx-auto mb-8 flex w-[50%] cursor-pointer justify-center rounded-xl bg-black py-1 text-center text-white transition-all duration-300 group-hover:scale-115 hover:scale-105">
+        <div
+          onClick={() => {
+            window.open(project.git, "_blank", "noopener,noreferrer");
+          }}
+          className="absolute bottom-0 z-20 mx-auto mb-8 flex w-[50%] cursor-pointer justify-center rounded-xl bg-black py-1 text-center text-white transition-all duration-300 group-hover:scale-115 hover:scale-105"
+        >
           <div>Open Project</div>
           <GithubOutlined className="self-centeralign-middle ml-2 text-xl" />
         </div>
         <div className="group flex h-[480px] w-[300px] flex-col rounded-xl border-[0.5px] bg-white text-sm transition-all duration-300 hover:scale-105">
           <div className="relative h-[35%]">
             <img
-              src={chess2}
+              src={`./public/${project.img}`}
+              alt={project.img}
               className="mx-[4%] mt-[4%] h-[96%] w-[92%] rounded-2xl object-cover"
             />
           </div>
