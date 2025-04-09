@@ -104,7 +104,7 @@ function CarouselItem({ project = "ss" }) {
         <div className="group flex h-[480px] w-[300px] flex-col rounded-xl border-[0.5px] bg-white text-sm transition-all duration-300 hover:scale-105">
           <div className="relative h-[35%]">
             <img
-              src={`./public/${project.img}`}
+              src={`./${project.img}`}
               alt={project.img}
               className="mx-[4%] mt-[4%] h-[96%] w-[92%] rounded-2xl object-cover"
             />
